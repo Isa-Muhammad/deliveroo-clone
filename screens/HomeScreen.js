@@ -14,8 +14,7 @@ import {
   SearchIcon,
   AdjustmentsIcon,
 } from "react-native-heroicons/outline";
-import Categories from "./components/Categories";
-
+import Categories from "../components/Categories";
 const HomeScreen = () => {
   //To create a custom header and not use default react native navigation header
   const navigation = useNavigation(); // Provides acess to navigation object
