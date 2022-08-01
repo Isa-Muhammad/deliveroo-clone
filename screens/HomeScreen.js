@@ -15,6 +15,8 @@ import {
   AdjustmentsIcon,
 } from "react-native-heroicons/outline";
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
+
 const HomeScreen = () => {
   //To create a custom header and not use default react native navigation header
   const navigation = useNavigation(); // Provides acess to navigation object
@@ -68,7 +70,23 @@ const HomeScreen = () => {
       >
         {/* Categories */}
         <Categories />
-        {/* Feaured Rows */}
+
+        {/* Feaured */}
+        <FeaturedRow
+          id="123"
+          title="Featured"
+          description="Paid placements from our partners"
+        />
+        <FeaturedRow
+          id="1234"
+          title="Tasty Discounts"
+          description="Everyone's been enjoying these juicy discounts!"
+        />
+        <FeaturedRow
+          id="12345"
+          title="Offers near you!"
+          description="Why not support your local restaurants tonight!"
+        />
       </ScrollView>
     </SafeAreaView>
   );
